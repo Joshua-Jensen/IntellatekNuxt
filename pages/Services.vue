@@ -21,7 +21,7 @@
 
 
   <div class="row px-5 holder">
-    <div class="padding col-md-3 col-sm-6 py-3 item ">
+    <div class="padding col-md-3 col-sm-6 py-3 item selectable">
       <div class="services-card  rounded background-testing d-flex justify-content-center align-items-center">
 
         <h4 class="readability"> Testing Support</h4>
@@ -39,7 +39,7 @@
         <button @click="open(1)" class="btn btn-primary opening">learn more</button>
       </div>
     </div>
-    <div class="padding col-md-3 col-sm-6 py-3 item">
+    <div class="padding col-md-3 col-sm-6 py-3 item selectable">
       <div class="services-card rounded background-app d-flex justify-content-center align-items-center">
         <h4 class="readability"> Application Management</h4>
         <p class="readability-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptatem veniam
@@ -48,7 +48,7 @@
         <button @click="open(2)" class="btn btn-primary opening">learn more</button>
       </div>
     </div>
-    <div class="padding col-md-3 col-sm-6 py-3 item ">
+    <div class="padding col-md-3 col-sm-6 py-3 item selectable">
       <div class="services-card rounded background-admin d-flex justify-content-center align-items-center">
         <h4 class="readability"> Administration Solutions</h4>
         <p class="readability-dark"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus eius
@@ -57,7 +57,7 @@
         <button @click="open(3)" class="btn btn-primary opening">learn more</button>
       </div>
     </div>
-    <div class="padding col-md-3 col-sm-6 py-3 item">
+    <div class="padding col-md-3 col-sm-6 py-3 item selectable">
       <div class="services-card rounded background-additional d-flex justify-content-center align-items-center">
         <h4 class="readability"> Additional Services</h4>
         <p class="readability-dark rounded">hello whats this</p>
