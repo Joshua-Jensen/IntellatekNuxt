@@ -10,9 +10,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "ipx": "^3.0.1",
     "nuxt": "^3.10.3",
-    "usebootstrap": "^3.5.1",
     "vue": "^3.4.19",
     "vue-router": "^4.3.0"
   }

@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    'usebootstrap'
-  ]
+  ],
+  css: ["bootstrap/dist/css/bootstrap.min.css"], // add
+  vite: {
+    define: {
+      "process.env.DEBUG": false,
+    },
+  },
 })
