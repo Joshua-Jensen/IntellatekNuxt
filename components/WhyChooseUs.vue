@@ -1,6 +1,8 @@
 <template>
-  <div class="container-fluid">
-    this is the
+  <div class="row">
+    <col-12>
+      carousel stuff
+    </col-12>
   </div>
 </template>
 
@@ -11,7 +13,7 @@ import { computed, onMounted } from 'vue';
 
 export default {
   setup() {
-    return {};
+    return {}
   }
 }
 </script>

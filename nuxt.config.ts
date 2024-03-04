@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
+    'nuxt-aos'
   ],
   css: ["bootstrap/dist/css/bootstrap.min.css"], // add
   vite: {
