@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    'nuxt-aos'
+    'nuxt-aos',
+    '@vueform/nuxt',
   ],
   css: ["bootstrap/dist/css/bootstrap.min.css"], // add
   vite: {

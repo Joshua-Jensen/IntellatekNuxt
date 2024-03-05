@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="row">
+  <div class="container footer-border">
+    <div class="row ">
       <div class="col-3">
         <h2>Intellatek</h2>
       </div>
@@ -27,4 +27,11 @@
   </div>
 </template>
 
-
+<style lang="scss" scoped>
+  .footer-border{
+    border-top-style: solid;
+    border-color: #0F76BB;
+border-width: 5px;
+padding-top: 2em;
+  }
+</style>

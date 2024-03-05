@@ -1,20 +1,20 @@
 <template>
-  <div class="row">
-    <div class="col-12" v-if="activeItem == 1">
-      <img src="https://www.intellatek.net/assets/images/services/remote.png" alt="">
+  <div class="row justify-content-center pb-5">
+    <div class="col-8 custom-card rounded p-3 px-5 position-relative" v-if="activeItem == 1">
+      <img class="image mb-3" src="https://www.intellatek.net/assets/images/services/remote.png" alt="">
       <h2>State / Federal Testing Support: MAP, ACT, WIDA, SBAC</h2>
-      <p>Intellatek configures testing servers as well as the virtual TSM’s needed in order to test multiple grade
+      <p class="margin-bottom">Intellatek configures testing servers as well as the virtual TSM’s needed in order to test multiple grade
         levels at once. Furthermore, we set up the device toolkit on behalf of the campuses, which provide the
         configuration files to each computer. Additionally, confirming that the latest testing software version has been
         pushed out to all devices across all campuses. We also work with testing coordinators to prepared them for all the
         “How To’s” and “What If’s” needed to successfully test. Next, spot checked multiple laptop, desktops, chromebooks
         to make sure testing is working. Intellatek also provides a tech for the first day of testing just in case to
         provide additional support for test coordinators.</p>
+        <button @click="close()" class="btn btn-danger btn-rounded button-position">close</button>
     </div>
-    <div class="col-12" v-if="activeItem == 2"></div>
-    <div class="col-12" v-if="activeItem == 3"></div>
-    <div class="col-12" v-if="activeItem == 4"></div>
-    <div> {{ activeItem }} hello</div>
+    <div class="col-12" v-if="activeItem == 2">2</div>
+    <div class="col-12" v-if="activeItem == 3">3</div>
+    <div class="col-12" v-if="activeItem == 4">4</div>
   </div>
 
 
@@ -83,10 +83,10 @@ export default {
     return {
       activeItem,
       open(item) {
-        activeItem.label = item
+activeItem.value = 1
       },
       close() {
-        activeItem.label = null
+        activeItem.value = null
       }
     }
   }
@@ -156,6 +156,7 @@ export default {
   .item {
     flex: 1;
     transition: all 1s ease-in-out;
+    transition-delay: 100ms;
     position: relative;
 
     &:hover {
@@ -170,12 +171,34 @@ export default {
 
       p {
         visibility: visible;
-        // transition-delay: 300ms;
+        transition-delay: 300ms;
       }
     }
   }
 
 
+}
+
+.custom-card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 25vh;
+}
+
+.button-position{
+position: absolute;
+bottom: 15px;
+right: 50px;
+}
+
+.margin-bottom{
+  margin-bottom: 3em;
 }
 </style>
 

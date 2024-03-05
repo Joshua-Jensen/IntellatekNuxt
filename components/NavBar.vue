@@ -4,7 +4,7 @@
       <div class="col-6">
 
         <router-link :to="{ name: 'index' }">
-          <img src="public\intellatek.png" alt="intellatek logo" class="sizing">
+          <img src="/intellatek.png" alt="intellatek logo" class="sizing">
         </router-link>
         <button class="btn btn-rounded" @click="Services()"> Services </button>
         <button class="btn btn-rounded" @click="Discover()"> Discover Us </button>
