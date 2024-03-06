@@ -29,6 +29,7 @@
 
 <style lang="scss" scoped>
   .footer-border{
+    border-style: none;
     border-top-style: solid;
     border-color: #0F76BB;
 border-width: 5px;
