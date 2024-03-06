@@ -6,9 +6,11 @@ import FooterBar from "./components/FooterBar.vue";
     <NavBar />
   </header>
   <NuxtPage />
+  <UNotifications />
   <footer>
     <FooterBar />
   </footer>
+
 </template>
 
 

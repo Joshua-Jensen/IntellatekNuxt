@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-aos',
     '@vueform/nuxt',
+    '@nuxt/ui',
   ],
   css: ["bootstrap/dist/css/bootstrap.min.css"], // add
   vite: {

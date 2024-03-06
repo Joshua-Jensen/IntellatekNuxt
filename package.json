@@ -10,6 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/ui": "^2.14.2",
+    "@nuxtjs/axios": "^5.13.6",
     "@vueform/nuxt": "^1.4.0",
     "bootstrap": "^5.3.3",
     "ipx": "^3.0.1",

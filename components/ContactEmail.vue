@@ -1,6 +1,6 @@
 <template>
 
-  <form @submit.prevent="handleSubmit()" class="form-floating needs-validation row px-5" novalidate>
+  <form @submit.prevent="test()" class="form-floating needs-validation row px-5" novalidate>
 
     <div class="col-6 mb-3 ">
       <div class="form-floating has-validation">
@@ -36,13 +36,39 @@
 <script>
 import { computed, onMounted, ref } from 'vue';
 
+
 export default {
   setup() {
+    const toast = useToast()
     const form = ref({})
     return {
       form,
-      handleSubmit() {
+      async handleSubmit() {
+        if (form.value.name && form.value.email && form.value.subject && form.value.message) {
+          try {
+
+            await $fetch('http://intellatek.net/assets/php/contact-form.php', {
+              method: 'POST',
+              body: {
+                name: form.value.name,
+                email: form.value.email,
+                subject: form.value.subject,
+                message: form.value.message
+              }
+            })
+          }
+          catch {
+            toast.add({ title: 'Your message has failed to send', color: 'danger' })
+          }
+          toast.add({
+            title: 'Thank you! Your Message has been sent.'
+          })
+        }
+
         console.log('does this work');
+      },
+      test() {
+        toast.add({ title: 'this is a test test', timeout: 0, })
       }
     }
   }
@@ -52,7 +78,7 @@ export default {
 <style lang="scss" scoped>
 .message {
   width: 100%;
-  min-height: 25vh;
+  min-height: 15vh;
 }
 </style>
 
